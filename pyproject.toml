@@ -31,6 +31,7 @@ test = ["pytest"]
 wheel.expand-macos-universal-tags = true
 
 
+
 [tool.pytest.ini_options]
 minversion = "6.0"
 addopts = ["-ra", "--showlocals", "--strict-markers", "--strict-config"]
