@@ -3,7 +3,7 @@ requires = ["scikit-build-core>=0.3.3", "pybind11"]
 build-backend = "scikit_build_core.build"
 
 [project]
-name = "scikit_build_example"
+name = "cary_build_example"
 version = "0.0.1"
 description="A minimal example package (with pybind11)"
 readme = "README.md"
