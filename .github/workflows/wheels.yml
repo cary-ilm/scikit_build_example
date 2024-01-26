@@ -1,14 +1,12 @@
 name: Wheels
 
 on:
-  workflow_dispatch:
   pull_request:
+    paths:
+      - '**'
   push:
-    branches:
-     - master
-  release:
-    types:
-      - published
+    paths:
+      - '**'
 
 env:
   FORCE_COLOR: 3
