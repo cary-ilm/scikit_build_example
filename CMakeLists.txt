@@ -21,7 +21,7 @@ find_package(Python REQUIRED COMPONENTS Interpreter Development.Module)
 python_add_library(cary_build_example MODULE main.cpp WITH_SOABI)
 
 # This is passing in the version as a define just as an example
-target_compile_definitions(cary_build_example PRIVATE VERSION_INFO=${PROJECT_VERSION})
+#target_compile_definitions(cary_build_example PRIVATE VERSION_INFO=${PROJECT_VERSION})
 
 # The install directory is the output (wheel) directory
-install(TARGETS cary_build_example DESTINATION cary_build_example)
+#install(TARGETS cary_build_example DESTINATION cary_build_example)

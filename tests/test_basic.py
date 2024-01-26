@@ -7,6 +7,5 @@ def test_hello():
     print(f"dir(m): {dir(m)}")
     print(f"m.__name__={m.__name__}")
     print(f"m.__file__={m.__file__}")
-    print(f"m.__path__={m.__path__}")
-    m.hello()
+#    m.hello()
 
