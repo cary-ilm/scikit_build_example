@@ -14,7 +14,7 @@ static PyMethodDef methods[] = {
   {NULL, NULL},
 };
 
-PyMODINIT_FUNC PyInit_cary_build_example(void)
+PyMODINIT_FUNC PyInit_XXX(void)
 {
     static struct PyModuleDef moduledef = {                   
         PyModuleDef_HEAD_INIT, "cary_build_example", "", -1, methods,
