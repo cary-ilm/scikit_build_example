@@ -18,10 +18,10 @@ find_package(Python REQUIRED COMPONENTS Interpreter Development.Module)
 
 # Add a library using FindPython's tooling (pybind11 also provides a helper like
 # this)
-python_add_library(cary_build_example MODULE main.cpp WITH_SOABI)
+python_add_library(XXX MODULE main.cpp WITH_SOABI)
 
 # This is passing in the version as a define just as an example
-#target_compile_definitions(cary_build_example PRIVATE VERSION_INFO=${PROJECT_VERSION})
+target_compile_definitions(XXX PRIVATE VERSION_INFO=${PROJECT_VERSION})
 
 # The install directory is the output (wheel) directory
-#install(TARGETS cary_build_example DESTINATION cary_build_example)
+install(TARGETS XXX DESTINATION cary_build_example)
