@@ -17,6 +17,7 @@ test = ["pytest"]
 
 [tool.scikit-build]
 wheel.expand-macos-universal-tags = true
+wheel.packages = ["src/wrappers/python"]
 
 [tool.scikit-build.cmake.define]
 MATERIALX_BUILD_SHARED_LIBS = 'OFF' # Be explicit

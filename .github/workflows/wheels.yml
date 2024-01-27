@@ -17,13 +17,13 @@ concurrency:
 
 jobs:
   build_wheels:
-    name: Build Wheels on ${{ matrix.os }}
+    name: Build Wheels on ${{ matrix.os }} for Python 3.${{ matrix.python-minor }}
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
       matrix:
         os: [ubuntu-latest]
-        python-minor: ['10', '11', '12']
+        python-minor: ['11', '12']
 
     steps:
     - uses: actions/checkout@v4
@@ -38,6 +38,7 @@ jobs:
     - uses: pypa/cibuildwheel@v2.16
       env:
         CIBW_BUILD: 'cp3${{ matrix.python-minor }}-*'
+        CIBW_SKIP: '*musllinux*'
         CIBW_ARCHS_MACOS: universal2
         CIBW_ARCHS_WINDOWS: auto ARM64
 

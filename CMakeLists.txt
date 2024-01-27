@@ -12,10 +12,4 @@ project(
   VERSION ${SKBUILD_PROJECT_VERSION}
   LANGUAGES CXX)
 
-find_package(Python REQUIRED COMPONENTS Interpreter Development.Module)
-
-python_add_library(Hello MODULE src/main.cpp WITH_SOABI)
-
-target_compile_definitions(Hello PRIVATE VERSION_INFO=${PROJECT_VERSION})
-
-install(TARGETS Hello DESTINATION Hello)
+add_subdirectory(src/wrappers/python)
