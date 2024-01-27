@@ -16,10 +16,10 @@ static PyMethodDef methods[] = {
   {NULL, NULL},
 };
 
-PyMODINIT_FUNC PyInit__XXX(void)
+PyMODINIT_FUNC PyInit_Hello(void)
 {
     static struct PyModuleDef moduledef = {                   
-        PyModuleDef_HEAD_INIT, "cary_build_example", "", -1, methods,
+        PyModuleDef_HEAD_INIT, "Hello", "", -1, methods,
     }; 
 
     PyObject *m = PyModule_Create(&moduledef);
