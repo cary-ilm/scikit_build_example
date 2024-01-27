@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-import Hello as m
+from Hello import Hello as m
 
 def test_hello():
     print(f"m: {m}")
